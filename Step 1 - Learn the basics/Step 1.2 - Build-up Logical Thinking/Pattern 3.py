@@ -8,7 +8,7 @@ import sys
 try:
     sys.stdin = open("input.txt", "r")
     sys.stdout = open("output.txt", "w")
-    sys.stderr = open("error.txt", "w")
+    sys.stderr = open("output.txt", "w")
 except:
     pass
 
@@ -17,6 +17,7 @@ except:
 # ---------------------- Code Starts Here ----------------------#
 
 # User function Template for python3
+
 
 class Solution:
     def printTriangle(self, N):
