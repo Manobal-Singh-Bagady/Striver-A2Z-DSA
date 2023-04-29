@@ -15,29 +15,36 @@ except FileNotFoundError as __:
 
 
 # ---------------------- Code Starts Here ----------------------#
+
 # User function Template for python3
 
 
 class Solution:
     def printTriangle(self, n):
-        for i in range(1, n + 1):
-            print("* " * i)
+        for i in range(n):
+            for j in range(n):
+                if i == 0 or i == (n - 1) or j == 0 or j == n - 1:
+                    print("*", end="")
+                else:
+                    print(" ", end="")
+            print()
 
 
-# *
-# * *
-# * * *
-# * * * *
-# * * * * *
+# *****
+# *   *
+# *   *
+# *   *
+# *****
 
 
 # {
 # Driver Code Starts
 # Initial Template for Python 3
+
 if __name__ == "__main__":
     t = int(input())
     for _ in range(t):
-        N = int(input())
+        N = int(input().strip())
         ob = Solution()
         ob.printTriangle(N)
 # } Driver Code Ends

@@ -153,3 +153,4 @@ cython_debug/
 error.txt
 input.txt
 output.txt
+.vscode/settings.json

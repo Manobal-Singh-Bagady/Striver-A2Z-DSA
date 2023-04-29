@@ -1,35 +1,38 @@
 # ---------------- MSB's Coding Template ---------------- #
-'''
+"""
     "ɴᴏ ᴄᴏᴅᴇ ɪꜱ ᴘᴇʀꜰᴇᴄᴛ"
-'''
+"""
 
 # ---I/O from file---#
 import sys
+
 try:
-    sys.stdin = open("input.txt", "r")
-    sys.stdout = open("output.txt", "w")
-    sys.stderr = open("error.txt", "w")
-except:
+    sys.stdin = open("input.txt", "r", encoding="UTF-8")
+    sys.stdout = open("output.txt", "w", encoding="UTF-8")
+    sys.stderr = open("output.txt", "w", encoding="UTF-8")
+except FileNotFoundError as __:
     pass
 
-# Link - https://practice.geeksforgeeks.org/problems/square-pattern/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=pattern_1
 
 # ---------------------- Code Starts Here ----------------------#
-
-# User function Template for python3
-
-
 class Solution:
-    def printSquare(self, N):
-        for i in range(N):
-            print('* '*N)
+    def printSquare(self, n):
+        for i in range(n):
+            print("* " * n)
+
+
+# * * * * *
+# * * * * *
+# * * * * *
+# * * * * *
+# * * * * *
 
 
 # {
 # Driver Code Starts
 # Initial Template for Python 3
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     t = int(input())
     for _ in range(t):
         N = int(input())

@@ -21,19 +21,20 @@ except FileNotFoundError as __:
 class Solution:
     def printTriangle(self, n):
         for i in range(1, n + 1):
-            print("* " * i)
+            print((str(i) + " ") * i)
 
 
-# *
-# * *
-# * * *
-# * * * *
-# * * * * *
+# 1
+# 2 2
+# 3 3 3
+# 4 4 4 4
+# 5 5 5 5 5
 
 
 # {
 # Driver Code Starts
 # Initial Template for Python 3
+
 if __name__ == "__main__":
     t = int(input())
     for _ in range(t):

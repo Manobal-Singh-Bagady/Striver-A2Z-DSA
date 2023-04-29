@@ -19,25 +19,28 @@ except FileNotFoundError as __:
 
 
 class Solution:
-    def printTriangle(self, n):
-        for i in range(1, n + 1):
-            print("* " * i)
+    def printTriangle(self, N):
+        for i in range(N, 0, -1):
+            for j in range(65, 65 + i):
+                print(chr(j), end="")
+            print()
 
 
-# *
-# * *
-# * * *
-# * * * *
-# * * * * *
+# ABCDE
+# ABCD
+# ABC
+# AB
+# A
 
 
 # {
 # Driver Code Starts
 # Initial Template for Python 3
+
 if __name__ == "__main__":
     t = int(input())
     for _ in range(t):
-        N = int(input())
+        N = int(input().strip())
         ob = Solution()
         ob.printTriangle(N)
 # } Driver Code Ends

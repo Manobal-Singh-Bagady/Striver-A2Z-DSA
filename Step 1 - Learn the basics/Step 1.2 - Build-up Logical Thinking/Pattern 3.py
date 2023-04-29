@@ -1,18 +1,18 @@
 # ---------------- MSB's Coding Template ---------------- #
-'''
+"""
     "ɴᴏ ᴄᴏᴅᴇ ɪꜱ ᴘᴇʀꜰᴇᴄᴛ"
-'''
+"""
 
 # ---I/O from file---#
 import sys
+
 try:
-    sys.stdin = open("input.txt", "r")
-    sys.stdout = open("output.txt", "w")
-    sys.stderr = open("output.txt", "w")
-except:
+    sys.stdin = open("input.txt", "r", encoding="UTF-8")
+    sys.stdout = open("output.txt", "w", encoding="UTF-8")
+    sys.stderr = open("output.txt", "w", encoding="UTF-8")
+except FileNotFoundError as __:
     pass
 
-# Link - https://practice.geeksforgeeks.org/problems/triangle-number/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=pattern_3
 
 # ---------------------- Code Starts Here ----------------------#
 
@@ -20,18 +20,26 @@ except:
 
 
 class Solution:
-    def printTriangle(self, N):
-        for i in range(1, N+1):
-            for j in range(1, i+1):
+    def printTriangle(self, n):
+        for i in range(1, n + 1):
+            for j in range(1, i + 1):
                 print(j, end=" ")
             print()
+
+
+# 1
+# 1 2
+# 1 2 3
+# 1 2 3 4
+# 1 2 3 4 5
+
 
 # {
 # Driver Code Starts
 # Initial Template for Python 3
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     t = int(input())
     for _ in range(t):
         N = int(input())
