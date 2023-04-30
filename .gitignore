@@ -154,3 +154,5 @@ error.txt
 input.txt
 output.txt
 .vscode/settings.json
+*.exe
+.vscode/tasks.json
