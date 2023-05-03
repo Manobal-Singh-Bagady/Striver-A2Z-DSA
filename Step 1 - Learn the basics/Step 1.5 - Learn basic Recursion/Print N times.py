@@ -20,16 +20,17 @@ except FileNotFoundError as __:
 
 class Solution:
     # Complete this function
-    def printNos(self, N: int) -> int:
+    def printNos(self, N: int):
         if N == 0:
-            return 1
-        print(self.printNos(N - 1), end=" ")
-        return N + 1
+            return
+        self.printNos(N - 1)
+        print(N, end=" ")
 
 
 # {
 # Driver Code Starts
 # Initial Template for Python 3
+
 
 def main():
     T = int(input())
